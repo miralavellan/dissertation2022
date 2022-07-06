@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuItemAddFolder"
+        android:title="@string/add_folder" />
+    <item
+        android:id="@+id/menuItemExportDatabase"
+        android:title="@string/export_database" />
+    <item
+        android:id="@+id/menuItemImportDatabase"
+        android:title="@string/import_database" />
+    <item
+        android:id="@+id/menuItemChangeUsername"
+        android:title="@string/change_username" />
+    <item
+        android:id="@+id/menuItemChangePassword"
+        android:title="@string/change_password" />
+    <item
+        android:id="@+id/menuItemChangeBiometrics"
+        android:title="@string/change_biometrics_settings" />
+
+
+</menu>

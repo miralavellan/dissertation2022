@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">BytePass</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+
+    <string name="master_password">master password</string>
+    <string name="master_username">master username</string>
+    <string name="hint_optional">hint (optional)</string>
+    <string name="re_enter_password">re-enter password</string>
+
+    <string name="categories">Categories</string>
+    <string name="accounts">Accounts</string>
+    <string name="cards">Cards</string>
+    <string name="folders">Folders</string>
+    <string name="empty_list">Your list is empty!</string>
+
+    <string name="host">host</string>
+    <string name="user">user</string>
+    <string name="password">password</string>
+    <string name="add">add</string>
+    <string name="ok">OK</string>
+
+    <string name="edit">EDIT</string>
+    <string name="delete">DELETE</string>
+    <string name="name">name</string>
+    <string name="pin">PIN</string>
+
+    <string name="search">search</string>
+    <string name="valid_thru">valid thru</string>
+    <string name="number">number</string>
+    <string name="cvv">CVV</string>
+    <string name="account">Account</string>
+    <string name="card">Card</string>
+    <string name="add_folder">Add folder</string>
+    <string name="edit_folder">Edit folder</string>
+    <string name="delete_folder">Delete folder</string>
+    <string name="sort_alphabetically">Sort alphabetically</string>
+    <string name="sort_by_date">Sort by date</string>
+    <string name="sort_default">Default sort</string>
+    <string name="sort_by_date_created">Sort by date created</string>
+    <string name="sort_by_date_modified">Sort by date modified</string>
+    <string name="default_string">default</string>
+    <string name="test">test</string>
+    <string name="need_a_hint_click_here">Need a hint? Click here!</string>
+    <string name="export_database">Export Database</string>
+    <string name="import_database">Import Database</string>
+    <string name="change_username">Change Username</string>
+    <string name="change_password">Change Password</string>
+    <string name="change_biometrics_settings">Change Biometrics Settings</string>
+
+
+</resources>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCardActivity">
+
+    <EditText
+        android:id="@+id/etCardHost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/host"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/etCardName"
+        app:layout_constraintEnd_toStartOf="@+id/btnSeeAddCardHost"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnSeeAddCardHost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btnSeeAddCardName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/etCardHost"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_eye_24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/etCardName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/etCardPIN"
+        app:layout_constraintEnd_toStartOf="@+id/btnSeeAddCardName"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCardHost" />
+
+    <ImageButton
+        android:id="@+id/btnSeeAddCardName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btnSeeAddCardPIN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/etCardName"
+        app:layout_constraintTop_toBottomOf="@+id/btnSeeAddCardHost"
+        app:srcCompat="@drawable/ic_eye_24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/etCardPIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/pin"
+        android:inputType="numberPassword"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@id/spCardFolder"
+        app:layout_constraintEnd_toStartOf="@+id/btnSeeAddCardPIN"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCardName" />
+
+    <ImageButton
+        android:id="@+id/btnSeeAddCardPIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSeeAddCardFolder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/etCardPIN"
+        app:layout_constraintTop_toBottomOf="@+id/btnSeeAddCardName"
+        app:srcCompat="@drawable/ic_eye_24"
+        android:backgroundTint="@color/purple_200"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/spCardFolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@id/etCardPIN"
+        app:layout_constraintBottom_toTopOf="@id/etCardNumber"
+        app:layout_constraintEnd_toStartOf="@+id/btnSeeAddCardFolder"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:backgroundTint="@color/purple_500"
+        tools:layout_editor_absoluteY="298dp" />
+
+    <ImageButton
+        android:id="@+id/btnSeeAddCardFolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btnSeeAddCardNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/etCardNumber"
+        app:layout_constraintTop_toBottomOf="@+id/btnSeeAddCardPIN"
+        app:srcCompat="@drawable/ic_eye_24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/etCardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/number"
+        android:inputType="numberPassword"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@id/spCardFolder"
+        app:layout_constraintBottom_toTopOf="@id/etCardValidThru"
+        app:layout_constraintEnd_toStartOf="@+id/btnSeeAddCardNumber"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="385dp" />
+
+    <ImageButton
+        android:id="@+id/btnSeeAddCardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSeeAddCardValidThru"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/etCardNumber"
+        app:layout_constraintTop_toBottomOf="@+id/btnSeeAddCardFolder"
+        app:srcCompat="@drawable/ic_eye_24"
+        android:backgroundTint="@color/purple_200"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/etCardValidThru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/valid_thru"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@id/etCardNumber"
+        app:layout_constraintBottom_toTopOf="@id/etCardCVV"
+        app:layout_constraintEnd_toStartOf="@+id/btnSeeAddCardValidThru"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="472dp" />
+
+    <ImageButton
+        android:id="@+id/btnSeeAddCardValidThru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSeeAddCardCVV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/etCardValidThru"
+        app:layout_constraintTop_toBottomOf="@+id/btnSeeAddCardNumber"
+        app:srcCompat="@drawable/ic_eye_24"
+        android:backgroundTint="@color/purple_200"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/etCardCVV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/cvv"
+        android:inputType="numberPassword"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@id/etCardValidThru"
+        app:layout_constraintBottom_toTopOf="@id/btnAddCardOK"
+        app:layout_constraintEnd_toStartOf="@+id/btnSeeAddCardCVV"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="558dp" />
+
+    <ImageButton
+        android:id="@+id/btnSeeAddCardCVV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@id/btnAddCardOK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/etCardCVV"
+        app:layout_constraintTop_toBottomOf="@+id/btnSeeAddCardValidThru"
+        app:srcCompat="@drawable/ic_eye_24"
+        android:backgroundTint="@color/purple_200"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnAddCardOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCardCVV" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
